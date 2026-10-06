@@ -1,0 +1,37 @@
+CARE AKADEMİ - REPOYA EKLENECEKLER
+
+Bu klasördeki dosyaları careakademi reposunun KÖK dizinine yükle
+(index.html ile aynı yer). assets klasörü de kökte olmalı.
+
+  CNAME               -> careakademi.com alan adı bağlantısı
+  .nojekyll           -> GitHub'ın dosyaları işlemeden olduğu gibi sunmasını sağlar (daha hızlı yayın)
+  robots.txt          -> arama motorlarına izin + sitemap adresi
+  sitemap.xml         -> şimdilik sadece ana sayfa; yeni sayfa ekledikçe içine ekle
+  404.html            -> hafif bir "sayfa bulunamadı" sayfası
+  assets/analytics.js -> GA4 takip kodu (WhatsApp, telefon, e-posta tıklamaları ve form gönderimi dahil)
+
+1) GA4 ÖLÇÜM KİMLİĞİ
+   assets/analytics.js içinde Ölçüm Kimliği zaten girili (G-3X6CV4KFDC).
+   ÖNEMLİ: Bu kimliğin careakademi.com için açtığın GA4 mülkünden geldiğini kontrol et.
+   Başka bir sitenin (örn. Helal Sermaye) mülküne aitse verileri karışır; o durumda
+   careakademi.com için yeni bir mülk/veri akışı açıp 4. satırdaki kimliği değiştir.
+   Google'ın verdiği standart gtag kodunu ayrıca sayfaya YAPIŞTIRMA; bu dosya onun yerini tutar.
+   İki tag eklemek olayları çift sayar.
+
+2) HER SAYFAYA TEK SATIR EKLE
+   Sitenin her HTML sayfasında </body> etiketinden hemen önce şunu ekle:
+
+   <script src="/assets/analytics.js" defer></script>
+
+   (index.html ve varsa diğer tüm sayfalar. 404.html'de zaten ekli.)
+
+3) KONTROL
+   Yayına alındıktan sonra GA4 > Raporlar > Gerçek zamanlı ekranını aç,
+   siteyi başka bir sekmede gez; kendini orada görmelisin.
+   WhatsApp/telefon/form olayları "Olaylar" altında whatsapp_click, phone_click,
+   email_click, form_submit adlarıyla görünür. GA4'te bunlardan istediğini
+   "Anahtar olay" olarak işaretleyebilirsin.
+
+NOT: GA4 çerez/kimlik verisi topladığı için sitende KVKK aydınlatma metni ve çerez
+politikasının GA4'ü kapsadığından emin ol (classakademi.com'daki gibi footer'da bağlantıları olsun).
+Hız notu: takip kodu defer ile ve asenkron yüklenir, sayfa render'ını engellemez.
