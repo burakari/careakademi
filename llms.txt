@@ -1,0 +1,21 @@
+# Care Akademi
+
+> Care Akademi, Eskişehir'de yüz yüze ve Türkiye genelinde online birebir özel ders veren bir eğitim platformudur. LGS, YKS (TYT/AYT), KPSS, DGS, ALES hazırlığı, okul dersleri (matematik, fen bilimleri, Türkçe), yabancı dil (İngilizce, Almanca), müzik, yazılım ve hobi dersleri sunar.
+
+## Hızlı bilgi
+- Ders şekli: Birebir; Eskişehir'de yüz yüze, Türkiye genelinde online
+- Bölge: Eskişehir (Tepebaşı, Odunpazarı), online için tüm Türkiye
+- WhatsApp / telefon: +90 501 072 72 23
+- E-posta: info@careakademi.com
+- Sosyal medya: @careakademi (Instagram, Facebook, X, YouTube, TikTok, LinkedIn)
+- Ücret: Ders türüne, seviyeye ve formata göre değişir; güncel bilgi için iletişime geçilir
+
+## Sayfalar
+- [Ana sayfa](https://careakademi.com/): Genel bakış, nasıl çalışıyoruz, SSS, iletişim
+- [Sınav hazırlık](https://careakademi.com/sinav-hazirlik/): LGS, YKS, KPSS, DGS, ALES özel ders
+- [Okul dersleri](https://careakademi.com/okul-dersleri/): Matematik, fen bilimleri, Türkçe
+- [Yabancı dil](https://careakademi.com/yabanci-dil/): İngilizce, Almanca ve diğer diller
+- [Müzik, yazılım ve hobi](https://careakademi.com/muzik-yazilim-hobi/): Beceri dersleri
+- [Eskişehir özel ders](https://careakademi.com/eskisehir-ozel-ders/): Yüz yüze birebir ders
+- [Online özel ders](https://careakademi.com/online-ozel-ders/): Türkiye geneli canlı birebir ders
+- [Gizlilik ve KVKK](https://careakademi.com/gizlilik-ve-kvkk/)
