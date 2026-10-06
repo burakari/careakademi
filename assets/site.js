@@ -31,6 +31,18 @@
     });
   }
 
+  // görünme animasyonu (hareket azaltma tercihine saygılı)
+  try {
+    var mm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if ('IntersectionObserver' in window && !mm) {
+      var els = d.querySelectorAll('.sec-head,.card,.steps li,.zone,.quick,.form,.line,.follow,.faq details,.cta-band,.strip');
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+      els.forEach(function (el, i) { el.classList.add('rv'); el.style.transitionDelay = ((i % 4) * 70) + 'ms'; io.observe(el); });
+    }
+  } catch (e) {}
+
   // çerez tercihi (GA4 yalnızca onayla yüklenir)
   var KEY = 'care_consent';
   function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }

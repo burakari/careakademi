@@ -1,37 +1,16 @@
-CARE AKADEMİ - REPOYA EKLENECEKLER
+CARE AKADEMI SİTESİ - YÜKLEME NOTLARI (v2, yeni logolu premium tasarım)
 
-Bu klasördeki dosyaları careakademi reposunun KÖK dizinine yükle
-(index.html ile aynı yer). assets klasörü de kökte olmalı.
+1) careakademi-site klasörünün İÇİNDEKİ her şeyi GitHub'da careakademi reposunun köküne yükle
+   (klasörün kendisini değil, içindekileri). Aynı isimli dosyalar otomatik üzerine yazılır.
+   Mac'te .nojekyll gizli dosyadır (Cmd+Shift+. ile görünür); göremezsen atlayabilirsin.
 
-  CNAME               -> careakademi.com alan adı bağlantısı
-  .nojekyll           -> GitHub'ın dosyaları işlemeden olduğu gibi sunmasını sağlar (daha hızlı yayın)
-  robots.txt          -> arama motorlarına izin + sitemap adresi
-  sitemap.xml         -> şimdilik sadece ana sayfa; yeni sayfa ekledikçe içine ekle
-  404.html            -> hafif bir "sayfa bulunamadı" sayfası
-  assets/analytics.js -> GA4 takip kodu (WhatsApp, telefon, e-posta tıklamaları ve form gönderimi dahil)
+2) Yeni gelen dosyalar: assets/logo-120.webp, emblem-260/440/560.webp, og.jpg, favicon-32.png, favicon-48.png.
+   Artık kullanılmayanlar (repoda kalırsa zararı yok, istersen sil): favicon.svg, assets/og.png.
 
-1) GA4 ÖLÇÜM KİMLİĞİ
-   assets/analytics.js içinde Ölçüm Kimliği zaten girili (G-3X6CV4KFDC).
-   ÖNEMLİ: Bu kimliğin careakademi.com için açtığın GA4 mülkünden geldiğini kontrol et.
-   Başka bir sitenin (örn. Helal Sermaye) mülküne aitse verileri karışır; o durumda
-   careakademi.com için yeni bir mülk/veri akışı açıp 4. satırdaki kimliği değiştir.
-   Google'ın verdiği standart gtag kodunu ayrıca sayfaya YAPIŞTIRMA; bu dosya onun yerini tutar.
-   İki tag eklemek olayları çift sayar.
+3) Sayfa yapısı: index.html, sinav-hazirlik/, okul-dersleri/, yabanci-dil/, muzik-yazilim-hobi/,
+   eskisehir-ozel-ders/, online-ozel-ders/, gizlilik-ve-kvkk/, assets/, CNAME, robots.txt, sitemap.xml,
+   llms.txt, site.webmanifest, 404.html
 
-2) HER SAYFAYA TEK SATIR EKLE
-   Sitenin her HTML sayfasında </body> etiketinden hemen önce şunu ekle:
+4) GA4 yalnızca ziyaretçi "Kabul et" derse çalışır (assets/analytics.js içindeki G-DJ9P83P2QF).
 
-   <script src="/assets/analytics.js" defer></script>
-
-   (index.html ve varsa diğer tüm sayfalar. 404.html'de zaten ekli.)
-
-3) KONTROL
-   Yayına alındıktan sonra GA4 > Raporlar > Gerçek zamanlı ekranını aç,
-   siteyi başka bir sekmede gez; kendini orada görmelisin.
-   WhatsApp/telefon/form olayları "Olaylar" altında whatsapp_click, phone_click,
-   email_click, form_submit adlarıyla görünür. GA4'te bunlardan istediğini
-   "Anahtar olay" olarak işaretleyebilirsin.
-
-NOT: GA4 çerez/kimlik verisi topladığı için sitende KVKK aydınlatma metni ve çerez
-politikasının GA4'ü kapsadığından emin ol (classakademi.com'daki gibi footer'da bağlantıları olsun).
-Hız notu: takip kodu defer ile ve asenkron yüklenir, sayfa render'ını engellemez.
+5) Sosyal hesaplar @careakademi adıyla açılmış olmalı; açılmayanların bağlantısı çalışmaz.

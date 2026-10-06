@@ -1,6 +1,6 @@
 /* Care Akademi - GA4 (yalnızca ziyaretçi onay verirse yüklenir) */
 (function () {
-  var ID = 'G-3X6CV4KFDC'; // GA4 Ölçüm Kimliği
+  var ID = 'G-DJ9P83P2QF'; // GA4 Ölçüm Kimliği
   var loaded = false;
 
   function load() {
